@@ -9,6 +9,10 @@ function dropdown(){
     }
 }
 
+function myFunction() {
+    document.getElementById("dropdown-contentmedical").classList.toggle("show");
+  }
+
 // var acc = document.getElementsByClassName("accordion");
 // var i;
 
