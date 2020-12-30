@@ -1,7 +1,9 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
-
+/* .app {
+  margin-top: 60px;
+} */
 .app__banner {
   display: flex;
   flex-direction: column;
@@ -35,6 +37,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 1%;
+}
+.card {
+  cursor: pointer;
 }
 
 .card > h4,
