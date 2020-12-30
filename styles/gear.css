@@ -127,7 +127,8 @@ body {
   transition: max-height 0.2s ease-out;
 }
 .accordion:after {
-  content: "\2304";
+  font-family: "FontAwesome";
+  content: "\f078";
   color: #777;
   font-weight: bold;
   color: #ff3278;
@@ -136,7 +137,8 @@ body {
 }
 
 .active:after {
-  content: "\2303";
+  font-family: "FontAwesome";
+  content: "\f077";
   color: #ff3278;
   height: auto;
   transition: 1s;

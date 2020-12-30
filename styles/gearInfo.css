@@ -1,0 +1,20 @@
+.store {
+  display: flex;
+}
+
+.store__left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.store__left > img {
+  width: 45%;
+  margin: 10px;
+}
+.store__right {
+  border: 1px solid red;
+  width: 40%;
+}
