@@ -1,0 +1,18 @@
+.payment__option {
+    display: flex;
+    width: 400px;
+    border-bottom:1px solid gray;
+}
+
+.payment__option p {
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.payment__option > p:nth-child(1){
+    margin-left: 0%;
+}
+
+.payment__option > p:nth-child(3){
+    margin-right: 0%;
+}
