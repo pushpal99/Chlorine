@@ -52,8 +52,6 @@ body {
 }
 .app__banner__cards__pricing {
   margin: 5px;
-
-  margin-top: -20px;
 }
 .card > img {
   width: 95%;
@@ -124,8 +122,9 @@ body {
 .panel {
   display: flex;
   flex-direction: column;
+  width: 90%;
   justify-content: center;
-  padding: 0 18px;
+  align-items: center;
   background-color: transparent;
   max-height: 0px;
   overflow: hidden;
@@ -152,6 +151,7 @@ body {
 .panel > p {
   width: 90%;
   text-align: justify;
+  margin: 15px;
 }
 hr {
   border-color: transparent;
