@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#fitstart {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+  }
+  
+  #bestdeal {
+    width: 88%;
+    height: 90px;
+    margin: 3% 6%;
+    cursor: pointer;
+  }
+  
+  #clockBox{
+    width: 100%;
+  }
+  .clock {
+    width: 88%;
+    height: 50px;
+    margin: -3% 6% 3% 6%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236,236,236);
+  }
+  #limitedoffer{
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1%;
+    width: 98%;
+  }
+  #limitedoffervalue{
+    width: 96%;
+    text-align: center;
+    margin: -3% 5% 2% 1%;
+    font-size: 12px;
+    color: rgb(152,152,152);
+    letter-spacing: 3px;
+  }
+#gooffer{
+    margin-top: 0%;
+    transform: rotate(180deg);
+  }
+  
+  .membership {
+    background-color: rgb(66,66,83);
+    width: 100%;
+    color: white;
+  }
+  
+  .opt {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .opttxt1 {
+    margin-top: 10px;
+  }
+  .opttxt2{
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: rgb(136,142,158);
+    font-weight: 500;
+  }
+  .opttxt3 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
+.line {
+    flex-direction: row;
+    border: 0.5px solid white;
+    width: 40%;
+    height: 0;
+    margin-top: 10px;
+    
+}
+.opttxt3 > h3 {
+    width: 60%;
+    margin-top: -2px;
+}
+
+.workout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.workoutIconbox {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 27%;
+    margin: 30px;
+}
+.workouticon {
+    margin: 10px;
+    margin-left: 20%;
+}
+.workouticontext {
+    margin: 30px 5px;
+    width: 60%;
+    font-size: 18px;
+}
+
+.subscription {
+    text-align: center;
+    margin: -20px 0;
+}
+
+.subscriptionbox {
+  margin: 4% 8%;
+}
+.subscriptionlist{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.sub1 {
+  flex-basis: 32%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 11%;
+  border-radius: 10px;
+  margin-left: 1%;
+}
+.subrate{
+  color: black;
+  margin-left: 7%;
+  inline-size: -10px;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  margin-top: -20%;
+}
+.discount{
+  text-decoration:line-through;
+  margin-right: 8px;
+  color: rgb(155,155,155);
+}
+.validity{
+  color: rgb(155,155,155);
+  margin-top: -12%;
+}
+.buy{
+  color: red;
+  margin: 7% 4% 7% 42%;
+}
+
+.instedDiscount{
+  display: flex;
+  flex-direction: row;
+}
+.instentondebit{
+  flex-basis: 32%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(216,232,255);
+  height: 11%;
+  border-radius: 10px;
+  margin-left: 1%;
+  border-top: 1px dotted black;
+  color: rgb(54,54,54);
+  font-size: 13px;
+}
+.instedicon{
+  margin: 4% 7% ;
+  transform: rotate(270deg);
+}
+
+.faicon{
+  margin: 1%;
+  font-size: 20px;
+}
+.fa-ellipsis-h{
+  color: rgb(50,50,62);
+  word-spacing: 2%;
+  width: 96%;
+}
+.fa-less-than{
+  text-align: right;
+}
+.fa-greater-than{
+  color: black;
+  text-align: right;
+}
+
+.easyworkoutBox{
+  width: 100%;
+}
+.easyworkout{
+  margin: 4%;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+}
+#working{
+  display: flex;
+  flex-direction: row;
+}
+.sandc{
+  background-image: url('https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/5_id/M_CLP_2020-02-04T13:17:17.179Z.png');
+  background-size: contain;
+  width: 300px;
+  height: 200px;
+  margin-right: 3%;
+  border-radius: 4px;
+}
+.yoga{
+  background-image: url('https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/98_id/M_CLP_2020-06-09T07:20:12.507Z.png');
+  background-size: contain;
+  width: 300px;
+  height: 200px;
+  border-radius: 4px;
+}
+.mummum{
+  margin: 7%;
+}
+
+
+#keyfeatureBox{
+  width: 100%;
+  background-color: rgb(255,243,233);
+}
+#textfeature{
+  margin: 0 4%;
+  padding: 1%;
+  height: 10%;
+  font-size: 22px;
+}
+#keyfeatureiconBox{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+}
+.keyfeatureicon{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  justify-content: space-between;
+  text-align: center;
+}
+#convenience{
+  height: 30px;
+  margin-top: 15px;
+}
+.trainingclass{
+  color: rgb(155,155,155);
+  margin-top: -5%;
+}
+
+#quicklink{
+  width: 85%;
+  margin: 5% 6%;
+  display: flex;
+  flex-direction: column;
+}
+#quicklink > h2{
+  color: rgb(51,54,63);
+}
+#quicklink > h3{
+  border-bottom: 2px solid rgb(218,218,218);
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 0%;
+}
+
+#customerspeak{
+  width: 90%;
+  margin-left: 5%;
+}
+#customerspeaktext{
+  font-weight: 550;
+}
+#customerreviewBox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.customerBox{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+}
+.customerimg{
+width: 100px;
+height: 100px;
+border-radius: 50px;
+flex-basis: 16%;
+justify-content: space-between;
+}
+.customerfeedback{
+  font-size: 20px;
+  text-align: left;
+  flex-basis: 60%;
+  margin: -4% 0 0 5%; 
+  inline-size: 4px;
+  word-spacing: 2px;
+  line-height: 30px;
+  justify-content: space-between;
+}
+#seeall{
+  color: red;
+  text-align: right;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+#faqBox{
+  width: 100%;
+}
+#faqtext{
+  display: flex;
+  flex-direction: column;
+  margin: 0% 4%;
+  font-size: 20px;
+}
+#fourquestion{
+  color: rgb(106,106,106);
+  margin-top: -2%;
+  font-size: 18px;
+}
+#askquestion{
+  width: 80%;
+  margin-left: 10%;
+}
+.question {
+  background-color: #eee;
+  font-weight: 500;
+  color: rgb(106,106,106);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+}
+.active, .question:hover {
+  background-color: #ccc; 
+}
+.answer {
+  padding: 0 18px;
+  width: 60%;
+  text-align: left;
+  color: rgb(136,142,158);
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
