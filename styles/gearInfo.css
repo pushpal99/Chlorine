@@ -37,11 +37,13 @@
 }
 
 .store__right__desc {
+  margin-bottom: 15px;
   color: grey;
 }
 .store__right__btns {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 10px;
   align-items: center;
 }
 .store__right__btns__sizeButton {
@@ -85,6 +87,7 @@
 .store__right__productDetails {
   margin-top: 10%;
   margin-bottom: 4%;
+  /* border: 1px solid red; */
 }
 .store__right__material {
   margin-bottom: 4%;
@@ -105,8 +108,11 @@
 .store__right__delivery {
   margin-bottom: 4%;
 }
-.store__right__delivery > ul > li {
+.store__right__delivery > ul > li,
+.store__right__productDetails > ul > li,
+.store__right__material > ul > li {
   color: grey;
+  margin-left: 10%;
   margin-bottom: 5px;
 }
 .store__right__location {
