@@ -47,8 +47,6 @@ body {
 }
 .app__banner__cards__pricing {
   margin: 5px;
-
-  margin-top: -20px;
 }
 .card > img {
   width: 95%;
