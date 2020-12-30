@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 5, 2021 07:37:25").getTime();
+var countDownDate = new Date("Jan 5, 2021 17:37:25").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -11,3 +11,18 @@ var x = setInterval(function() {
     document.getElementById("limitedoffer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// let acc = document.getElementsByClassName("question");
+// let i;
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     let answer = this.nextElementSibling;
+//     if (answer.style.display === "block") {
+//       answer.style.display = "none";
+//     } else {
+//       answer.style.display = "block";
+//     }
+//   });
+// }  

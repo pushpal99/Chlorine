@@ -1,9 +1,6 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
-.app {
-  margin-top: 60px;
-}
 .app__banner {
   display: flex;
   flex-direction: column;
@@ -12,16 +9,13 @@ body {
 .app__heroBanner {
   display: flex;
   width: 100%;
+  margin-top: 5em;
 }
 
 .app__heroBanner img {
   width: 100%;
 }
 .app__banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   width: 90%;
   margin: 20px auto;
 }
@@ -42,9 +36,6 @@ body {
   align-items: center;
   padding: 1%;
 }
-.card {
-  cursor: pointer;
-}
 
 .card > h4,
 .card > h5 {
@@ -56,6 +47,8 @@ body {
 }
 .app__banner__cards__pricing {
   margin: 5px;
+
+  margin-top: -20px;
 }
 .card > img {
   width: 95%;
@@ -126,17 +119,15 @@ body {
 .panel {
   display: flex;
   flex-direction: column;
-  width: 90%;
   justify-content: center;
-  align-items: center;
+  padding: 0 18px;
   background-color: transparent;
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 .accordion:after {
-  font-family: "FontAwesome";
-  content: "\f078";
+  content: "\2304";
   color: #777;
   font-weight: bold;
   color: #ff3278;
@@ -145,8 +136,7 @@ body {
 }
 
 .active:after {
-  font-family: "FontAwesome";
-  content: "\f077";
+  content: "\2303";
   color: #ff3278;
   height: auto;
   transition: 1s;
@@ -155,7 +145,6 @@ body {
 .panel > p {
   width: 90%;
   text-align: justify;
-  margin: 15px;
 }
 hr {
   border-color: transparent;
