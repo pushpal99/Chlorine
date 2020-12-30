@@ -2,7 +2,9 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
-
+.dropdown__content {
+  display: none;
+}
 .logo__box {
   display: flex;
   position: fixed;
