@@ -2,35 +2,30 @@ html,
 body {
   font-family: "Roboto", sans-serif;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .logo__box {
   display: flex;
-  /* position: -webkit-sticky;
-  position: sticky; */
+  /* position: -webkit-sticky; */
+  /* position: sticky;  */
   position: fixed;
-  align-self: flex-start;
-  /* justify-content: space-between; */
   z-index: 10;
   top: 0;
   width: 100%;
+  justify-content: space-between;
   height: 60px;
   /* border: 1px solid red; */
   background-color: white;
 }
 
-.logo__box div {
-  margin-left: 10px;
-  /* border: 1px solid red; */
-}
-
-.logo__box > div:nth-last-child(1) {
-  margin-left: 30%;
-}
-
 .logo__img__section {
   /* width: 200px; */
   /* border: 1px solid red; */
-  margin: 0% 20% 0% 2%;
+  margin: 0% 0% 0% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,14 +41,17 @@ img {
   height: 100%;
   width: 100%;
 }
-
+.logo__box__center {
+  display: flex;
+  width: 50%;
+}
 .nav__links {
   display: flex;
-  width: 600px;
+  width: 100%;
   /* flex-wrap: wrap; */
   list-style-type: none;
   /* padding-left: 2%; */
-
+  /* justify-content: space-between; */
   /* border: 1px solid red; */
 }
 
@@ -64,10 +62,11 @@ img {
 
 .login__section {
   display: flex;
+  width: 11%;
   /* border: 1px solid red; */
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  /* margin-left: 15%; */
+  margin-right: 1%;
 }
 
 .login__section button {
