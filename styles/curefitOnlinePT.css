@@ -320,51 +320,83 @@ justify-content: space-between;
   cursor: pointer;
 }
 
-#faqBox{
-  width: 100%;
-  background-color: #eee;
+.app__FAQ {
+  background: #f2f4f8;
+  margin-top: 5%;
+  padding: 5%;
 }
-#faqtext{
+
+.FAQ__top__left > h1,
+.FAQ__top__left > h3 {
+  margin: 8px;
+}
+.FAQ__top__left > h3 {
+  color: #6a6a6a;
+  font-weight: normal;
+}
+.app__FAQ__top {
   display: flex;
-  flex-direction: column;
-  margin: 0% 4%;
-  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
-#fourquestion{
-  color: rgb(106,106,106);
-  margin-top: -2%;
-  font-size: 18px;
+
+.app__FAQ__bottom {
+  margin: 5%;
 }
-#askquestion{
-  width: 80%;
-  margin-left: 10%;
-  background-color: #eee;
-}
-.question {
-  background-color: #ddd;
-  font-weight: 500;
-  color: rgb(106,106,106);
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  border-bottom: 1px solid;
+  color: #6e6e6e;
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  font-size: 20px;
+  font-weight: bold;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 17px;
   transition: 0.4s;
 }
-.active, .question:hover {
-  background-color: #ccc; 
-}
-.answer {
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 18px;
-  width: 60%;
-  text-align: left;
-  color: rgb(136,142,158);
-  display: none;
-  background-color: white;
+  background-color: transparent;
+  max-height: 0px;
   overflow: hidden;
-}  
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  font-family: "FontAwesome";
+  content: "\f078";
+  color: #777;
+  font-weight: bold;
+  color: #ff3278;
+  margin-left: 5px;
+  transition: 1s;
+}
+
+.active:after {
+  font-family: "FontAwesome";
+  content: "\f077";
+  color: #ff3278;
+  height: auto;
+  transition: 1s;
+}
+
+.panel > p {
+  width: 90%;
+  text-align: justify;
+}
+hr {
+  border-color: transparent;
+  border-top: 0.5px solid rgb(231, 231, 231);
+  background-color: transparent;
+}
 
 
 .footer {
