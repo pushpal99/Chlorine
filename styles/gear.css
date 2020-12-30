@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .app__banner {
   display: flex;
@@ -9,7 +11,7 @@ body {
 .app__heroBanner {
   display: flex;
   width: 100%;
-  margin-top: 5em;
+  margin-top: 60px;
 }
 
 .app__heroBanner img {
@@ -17,7 +19,7 @@ body {
 }
 .app__banner {
   width: 90%;
-  margin: 20px auto;
+  margin: 5% auto;
 }
 
 .app__banner__first {
@@ -98,6 +100,7 @@ body {
   margin: 5%;
 }
 .accordion {
+  font-family: "Nunito", sans-serif, "FontAwesome";
   display: flex;
   justify-content: space-between;
   background: transparent;
@@ -121,11 +124,15 @@ body {
   padding: 0 18px;
   background-color: transparent;
   max-height: 0px;
+  justify-content: center;
+  align-items: center;
+
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 .accordion:after {
-  content: "\2304";
+  /* font-family: "FontAwesome"; */
+  content: "\f078";
   color: #777;
   font-weight: bold;
   color: #ff3278;
@@ -134,7 +141,8 @@ body {
 }
 
 .active:after {
-  content: "\2303";
+  /* font-family: "FontAwesome"; */
+  content: "\f077";
   color: #ff3278;
   height: auto;
   transition: 1s;
@@ -143,6 +151,7 @@ body {
 .panel > p {
   width: 90%;
   text-align: justify;
+  margin: 20px;
 }
 hr {
   border-color: transparent;
