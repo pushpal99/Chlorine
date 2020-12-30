@@ -3,7 +3,7 @@
   margin-top: 30px;
 }
 .container__left {
-  width: 25%;
+  width: 20%;
   padding: 4% 2%;
   border: transparent;
   border-right: 1px solid #f3f3f3;
@@ -47,10 +47,6 @@
   justify-content: space-between;
   width: 90%;
 }
-.container__left__icon > * {
-  font-weight: normal;
-}
-
 .container__left__icon > img {
   width: 25px;
   height: 25px;
