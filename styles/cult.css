@@ -65,6 +65,7 @@ img {
 }
 .login__section button {
   background-color: white;
+  margin: 5% 0%;
   border: none;
 }
 .footer {
@@ -169,7 +170,8 @@ button {
   text-align: left;
   padding: 5px;
 }
-a:active {
+a:active, a:hover {
+  cursor: pointer;
   color: rgb(253, 131, 171);
 }
 a[tabindex="1"]:focus {

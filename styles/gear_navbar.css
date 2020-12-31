@@ -5,25 +5,28 @@ body {
 .dropdown__content {
   display: none;
 }
+
+.nav__bar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 7px 5px 0px rgba(161, 143, 161, 1);
+  -moz-box-shadow: 0px 7px 5px 0px rgba(161, 143, 161, 1);
+  box-shadow: 0px 7px 5px 0px rgba(161, 143, 161, 1);
+  height: 60px;
+}
 .logo__box {
   display: flex;
-  position: fixed;
-  z-index: 10;
-  top: 0;
   width: 100%;
-  justify-content: space-between;
-  height: 60px;
-  background-color: white;
-  -webkit-box-shadow: 0px 7px 5px 0px rgba(19, 19, 19, 0.288);
-  -moz-box-shadow: 0px 7px 5px 0px rgba(19, 19, 19, 0.288);
-  box-shadow: 0px 7px 5px 0px rgba(19, 19, 19, 0.288);
 }
 
 .logo__img__section {
-  /* width: 200px; */
   /* border: 1px solid red; */
-  margin: 0% 0% 0% 2%;
+  left: 20px;
+  top: 5px;
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
 }
@@ -38,33 +41,68 @@ img {
   height: 100%;
   width: 100%;
 }
-.logo__box__center {
+/* .logo__box__center {
   display: flex;
   width: 50%;
-}
+} */
 .nav__links {
   display: flex;
-  width: 100%;
+  width: 40%;
+  margin: 20px auto;
   list-style-type: none;
+  /* border: 1px solid red; */
 }
-
 .nav__links li {
   margin: auto;
-  font-weight: 600;
+  font-size: 10px;
+  margin-top: -2%;
+}
+.link__section {
+  /* border: 1px solid red; */
+  width: 100%;
 }
 
 .login__section {
   display: flex;
-  width: 11%;
+  position: fixed;
+  right: 2vw;
+  top: 15px;
   /* border: 1px solid red; */
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-right: 1%;
+  /* margin-left: 15%; */
 }
 
 .login__section button {
   background-color: white;
   border: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  -webkit-box-shadow: 0px -6px 18px 1px rgba(207, 214, 214, 1);
+  -moz-box-shadow: 0px -6px 18px 1px rgba(207, 214, 214, 1);
+  box-shadow: 0px -6px 18px 1px rgba(207, 214, 214, 1);
+  top: 110%;
+  right: -30%;
+  padding: 20px;
+}
+.dropdown__block {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.dropdown__block > div {
+  /* border: 1px solid red; */
+  text-align: left;
+  padding: 5px;
 }
 
 .footer {
