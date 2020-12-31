@@ -311,7 +311,7 @@ a[tabindex="1"]:focus {
 
   /* voucher css */
  .voucher__section{
-     width: 90%;
+     width: 60%;
      margin: auto;
      line-height: 3%;
      /* border: 1px solid red; */
