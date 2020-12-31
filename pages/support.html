@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>support</title>
 </head>
-<body>
+<body onload="fetchValues()">
     <div class=nav__bar>
         <div class=logo__box>
             <div class=logo__img__section>
@@ -187,5 +187,11 @@
       </div>
       </div>
     </div>
+    <script>
+      function fetchValues(){
+        var user =JSON.parse(localStorage.getItem("user"));
+        document.getElementById("username").textContent= user.username;
+      }
+    </script>
 </body>
 </html>

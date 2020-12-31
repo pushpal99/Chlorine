@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Orders</title>
   </head>
-  <body>
+  <body onload="fetchValues()">
     <div class=nav__bar>
         <div class=logo__box>
             <div class=logo__img__section>
@@ -182,17 +182,25 @@
       </div>
     </div>
     <script>
-      count =0;
-      document.getElementById("login__btn").addEventListener("click", function(){
-        count++;
-        if(count%2==1){
-        document.getElementById("dropdown__content").style.display = "block";
-        }else{
-          document.getElementById("dropdown__content").style.display = "none";
-        }
-      })
-    
+      function fetchValues(){
+        var user =JSON.parse(localStorage.getItem("user"));
+        console.log(user)
+        document.getElementById("name").value= user.username;
+        document.getElementById("username").textContent= user.username;
+        document.getElementById("phone").value= user.phone;
+        document.getElementById("email").value= user.email;
+        document.getElementById("workemail").value= user.email;
+        document.getElementById("gender").value= user.gender;
+        document.getElementById("dob").value= user.dob;
+      }
     </script>
+   <script>
+    function fetchValues(){
+      var user =JSON.parse(localStorage.getItem("user"));
+      document.getElementById("username").textContent= user.username;
+    }
+  </script>
+
     <script src="scripts/cult.js"></script>
   </body>
 </html>

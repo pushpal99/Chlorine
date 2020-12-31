@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Orders</title>
   </head>
-  <body>
+  <body onload="fetchValues()">
     <div class=nav__bar>
         <div class=logo__box>
             <div class=logo__img__section>
@@ -109,7 +109,7 @@
           </div>
   
           <div class="hero__information">
-            <h4 id="username"></h4>
+            <h4 id="username"> </h4>
             <a href="/pages/profile.html"
               ><h6 style="color: #ff3278">VIEW PROFILE</h6></a
             >
@@ -182,5 +182,11 @@
       </div>
     </div>
     <script src="/scripts/cult.js"></script>
+    <script>
+      function fetchValues(){
+        var user =JSON.parse(localStorage.getItem("user"));
+        document.getElementById("username").textContent= user.username;
+      }
+    </script>
   </body>
 </html>
