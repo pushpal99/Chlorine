@@ -100,14 +100,14 @@ function openLogin() {
     </div>
     <h1>Create an account</h1>    
     
-    <input class="signUp__inputs" id="username" type="text" placeholder="Name" /> <br><br>
-    <input class="signUp__inputs" id="gender" type="text" placeholder="Gender" /><br><br>
-    <input class="signUp__inputs" id="phone" type="phone" placeholder="Phone" /><br><br>
-    <input class="signUp__inputs" id="email" type="text" placeholder="Email Id" /> <br><br>
+    <input class="signUp__inputs" id="username" type="text" placeholder="Name" required /> <br><br>
+    <input class="signUp__inputs" id="gender" type="text" placeholder="Gender" required /><br><br>
+    <input class="signUp__inputs" id="phone" type="phone" placeholder="Phone" required /><br><br>
+    <input class="signUp__inputs" id="email" type="text" placeholder="Email Id" required /> <br><br>
   
-    <input class="signUp__inputs" id="dob" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" /> <br><br>
+    <input class="signUp__inputs" id="dob" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required /> <br><br>
 
-    <input class="signUp__inputs" id="password" type="password" placeholder="Password" />
+    <input class="signUp__inputs" id="password" type="password" placeholder="Password" required />
     
     
     <p> <input type="checkbox"  class="checkbox" id="checkbox" required> By Continuing you agree to the
@@ -122,12 +122,28 @@ function openLogin() {
   }
 
   function createUser() {
-    var username= document.getElementById('username').value;
-    var email= document.getElementById('email').value;
-    var password= document.getElementById('password').value;
-    var phone= document.getElementById('phone').value;
-    var gender= document.getElementById('gender').value;
-    var dob= document.getElementById('dob').value;
+    var username= document.getElementById('username').value.trim();
+    var email= document.getElementById('email').value.trim();
+    var password= document.getElementById('password').value.trim();
+    var phone= document.getElementById('phone').value.trim();
+  var checkbox= document.getElementById('checkbox').checked;
+  var gender= document.getElementById('gender').value.trim();
+  var dob= document.getElementById('dob').value.trim();
+  // console.log(checkbox, typeof(checkbox))
+if(username == "" || password == "" || phone == "" || email == "" || gender == "" && dob == ""){
+  alert("Please fill all the values")
+  return
+}
+    if(phone.split("").length !== 10){
+      alert('Please enter valid Phone number');
+      return
+    }
+
+    if(checkbox == false){
+      alert('Please check the terms and conditions')
+      return
+    }
+  
 
 
     var user = {};
@@ -154,6 +170,23 @@ function openLogin() {
     localStorage.setItem("user",  JSON.stringify(user));
 
     window.location.href='/pages/loggedIn.html'
+
+
+  }
+
+  function login(){
+    var number = document.getElementById("userphone").value;
+    var data = JSON.parse(localStorage.getItem("user"));
+
+if(data.phone === number){
+  window.location.href='/pages/loggedIn.html'
+}
+
+else{
+  alert("User not found");
+return
+}
+
 
 
   }

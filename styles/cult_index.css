@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
+}
+.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
+}
 html,
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }

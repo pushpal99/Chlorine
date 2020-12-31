@@ -1,6 +1,6 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .dropdown__content {
   display: none;
@@ -99,13 +99,19 @@ button {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+}.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
 }
 .dropdown__block > div {
   /* border: 1px solid red; */
   text-align: left;
   padding: 5px;
 }
-
+.dropdown__block > div:nth-child(2) > a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer {
   background-color: black;
   color: white;

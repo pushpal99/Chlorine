@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 html,
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -42,6 +46,7 @@ img {
   width: 40%;
   margin: 20px auto;
   list-style-type: none;
+
   /* border: 1px solid red; */
 }
 .nav__links li {
@@ -49,6 +54,11 @@ img {
   width: 250px;
   font-weight: 500;
 }
+.nav__links > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .link__section {
   /* border: 1px solid red; */
   width: 100%;
@@ -160,6 +170,10 @@ button {
   right: -30%;
   padding: 10px;
 }
+.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
+}
 .dropdown__block {
   display: flex;
   /* justify-content: center; */
@@ -170,14 +184,18 @@ button {
   text-align: left;
   padding: 5px;
 }
+.dropdown__block > div:nth-child(2) > a {
+  text-decoration: none;
+  color: inherit;
+}
 a:active,
 a:hover {
   cursor: pointer;
   color: rgb(253, 131, 171);
+  text-decoration: none;
 }
 a[tabindex="1"]:focus {
   color: rgb(253, 131, 171);
-  outline: none;
 }
 .page {
   margin-top: 60px;
