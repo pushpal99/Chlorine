@@ -93,6 +93,9 @@ body {
 .show {
   display: block;
 }
+.view {
+  display: block;
+}
 /* .container__left__icon1:hover .dropdown-contentmedical {
     display: block;
   } */
