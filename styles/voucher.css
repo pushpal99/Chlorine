@@ -1,0 +1,60 @@
+#redeemBox{
+    margin: 2%;
+}
+#redeemtxt{
+    margin-top: 5%;
+}
+#redeemtxt1{
+    margin-top: -2%;
+    font-size: 14px;
+}
+#voucherCodeBox{
+    width: 80%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 5px 5px 25px rgb(209, 206, 206);
+    margin: 10% 0;
+}
+#voucherCode{
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    columns: black;
+    margin-left: 3%;
+    width: 60%;
+}
+#checkvalidityBtn{
+    float: right;
+    margin: 2%;
+    border: none;
+    background-color: rgb(252,128,140);
+    height: 40px;
+    color: white;
+    width: 24%;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#voucher{
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+#howtoredeem{
+    display: flex;
+    flex-direction: column;
+}
+.howtoredeemtxt{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.howtoredeemtxt > img{
+    width: 30px;
+    height: 30px;
+}
+.howtoredeemtxt > p{
+    font-size: 14px;
+    margin: 7px 20px;
+}
