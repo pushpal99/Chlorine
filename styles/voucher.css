@@ -83,10 +83,12 @@
   cursor: pointer;
   position: relative;
   top: 0;
+  background-color: rgb(245, 243, 243);
+  box-shadow: 2px 2px 15px rgb(212, 209, 209);
   transition: top ease 0.5s;
 }
 .helpList:hover {
-  background-color: whitesmoke;
+  background-color: rgb(245, 243, 243);
   box-shadow: 2px 2px 20px rgb(212, 209, 209);
   top: -3px;
 }
@@ -121,4 +123,9 @@
 #contactus {
   width: 100%;
   text-align: center;
+}
+.supportLine{
+    border: 1px solid rgb(239,239,239);
+    margin-top: 5%;
+    margin-bottom: -5%;
 }
