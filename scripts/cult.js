@@ -12,6 +12,9 @@ function dropdown(){
 function myFunction() {
     document.getElementById("dropdown-contentmedical").classList.toggle("show");
   }
+  function myFunction() {
+    document.getElementById("dropdown-contentaccount").classList.toggle("view");
+  }
 
 // var acc = document.getElementsByClassName("accordion");
 // var i;
