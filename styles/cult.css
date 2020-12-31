@@ -57,7 +57,7 @@ img {
   display: flex;
   position: fixed;
   right: 2vw;
-  top: 15px;
+  top: 10px;
   /* border: 1px solid red; */
   justify-content: center;
   align-items: center;
@@ -170,7 +170,8 @@ button {
   text-align: left;
   padding: 5px;
 }
-a:active, a:hover {
+a:active,
+a:hover {
   cursor: pointer;
   color: rgb(253, 131, 171);
 }
