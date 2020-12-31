@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-body{
-  font-family: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
 }
 html,
 body {
@@ -64,7 +64,10 @@ body {
   width: 25px;
   height: 25px;
 }
-
+.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
+}
 .container__left__icon:hover {
   color: grey;
 }
@@ -104,7 +107,7 @@ body {
 .container__right__information label {
   color: gray;
 }
-.container__right__information input{
+.container__right__information input {
   font-size: 11px;
 }
 .information__row input {
@@ -119,12 +122,13 @@ body {
   outline: none;
 }
 
-a:active, a:hover {
-  color:rgb(253,131,171);
+a:active,
+a:hover {
+  color: rgb(253, 131, 171);
   cursor: pointer;
 }
 
 a[tabindex="1"]:focus {
-  color:rgb(253,131,171);
+  color: rgb(253, 131, 171);
   outline: none;
 }

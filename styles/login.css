@@ -2,7 +2,10 @@
 body{
   font-family: 'Nunito', sans-serif;
 }
-
+.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   position: relative;
   margin: 0;

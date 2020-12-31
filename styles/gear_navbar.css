@@ -99,6 +99,9 @@ button {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+}.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
 }
 .dropdown__block > div {
   /* border: 1px solid red; */

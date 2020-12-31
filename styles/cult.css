@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-body{
-  font-family: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
 }
 
 html,
@@ -169,6 +169,10 @@ button {
   top: 110%;
   right: -30%;
   padding: 10px;
+}
+.container__left__icon > h4 > a {
+  text-decoration: none;
+  color: inherit;
 }
 .dropdown__block {
   display: flex;
