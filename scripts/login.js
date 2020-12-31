@@ -101,11 +101,16 @@ function openLogin() {
     <h1>Create an account</h1>    
     
     <input class="signUp__inputs" id="username" type="text" placeholder="Name" /> <br><br>
+    <input class="signUp__inputs" id="gender" type="text" placeholder="Gender" /><br><br>
+    <input class="signUp__inputs" id="phone" type="phone" placeholder="Phone" /><br><br>
     <input class="signUp__inputs" id="email" type="text" placeholder="Email Id" /> <br><br>
+  
+    <input class="signUp__inputs" id="dob" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" /> <br><br>
+
     <input class="signUp__inputs" id="password" type="password" placeholder="Password" />
     
     
-    <p> <input type="checkbox"  class="checkbox" id="checkbox"> By Continuing you agree to the
+    <p> <input type="checkbox"  class="checkbox" id="checkbox" required> By Continuing you agree to the
       <em style="color: red">Terms of Services</em> and
       <em style="color: red">Privacy policy</em>.</p>
 
@@ -120,11 +125,18 @@ function openLogin() {
     var username= document.getElementById('username').value;
     var email= document.getElementById('email').value;
     var password= document.getElementById('password').value;
+    var phone= document.getElementById('phone').value;
+    var gender= document.getElementById('gender').value;
+    var dob= document.getElementById('dob').value;
+
 
     var user = {};
     user.username = username;
     user.email = email;
     user.password = password;
+    user.phone= phone;
+    user.gender = gender;
+    user.dob=dob;
 
 
     var data = JSON.parse(localStorage.getItem("data"));

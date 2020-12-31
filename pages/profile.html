@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Profile</title>
   </head>
-  <body>
+  <body onload="fetchValues()">
     <div class=nav__bar>
       <div class=logo__box>
           <div class=logo__img__section>
@@ -109,7 +109,7 @@
           </div>
 
           <div class="hero__information">
-            <h4>Harsh Gaur</h4>
+            <h4 id="username">Harsh Gaur</h4>
             <a href="/pages/profile.html"
               ><h6 style="color: #ff3278">VIEW PROFILE</h6></a
             >
@@ -173,27 +173,27 @@
           <div class="information__row">
             <div>
               <label> NAME</label> <br /><br />
-              <input type="text" value="JOHN DOE" />
+              <input type="text" id="name" />
             </div>
             <div>
               <label>PHONE NUMBER</label> <br /><br />
-              <input type="phone" value="+01-23456789" />
+              <input type="phone" id="phone" />
             </div>
           </div>
           <div class="information__row">
             <div>
               <label> GENDER</label> <br /><br />
-              <input type="text" />
+              <input type="text"  id="gender" />
             </div>
             <div>
               <label>Date Of Birth</label> <br /><br />
-              <input type="date" />
+              <input type="date" id="dob"/>
             </div>
           </div>
           <div class="information__row">
             <div>
               <label>EMAIL</label> <br /><br />
-              <input type="text" value="johndoe@example.com" />
+              <input type="text" id="email"/>
             </div>
             <div>
               <label> WORK EMAIL</label>
@@ -204,6 +204,19 @@
         </div>
       </div>
     </div>
-    <script src="scripts/cult.js"></script>
+    <script src="/scripts/cult.js"></script>
+    <script>
+      function fetchValues(){
+        var user =JSON.parse(localStorage.getItem("user"));
+        document.getElementById("name").value= user.username;
+        document.getElementById("username").textContent= user.username;
+        document.getElementById("phone").value= user.phone;
+        document.getElementById("email").value= user.email;
+        document.getElementById("gender").value= user.gender;
+        document.getElementById("dob").value= user.dob;
+
+
+      }
+    </script>
   </body>
 </html>

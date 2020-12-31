@@ -24,8 +24,10 @@ body {
   z-index: 5;
   opacity: 100%;
   min-width: 300px;
+  min-height: 500px;
+
   width: 30%;
-  height: 500px;
+  height: auto;
   padding: 1%;
   border-radius: 10px;
   box-shadow: 0 0 10px;
@@ -141,10 +143,7 @@ body {
   border: none;
   outline: none;
 }
-.signUp_inputs {
-  width: 100%;
-  border: none;
-}
+
 .login > h1 {
   font-size: 50px;
 }
