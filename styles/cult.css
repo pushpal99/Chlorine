@@ -2,6 +2,8 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   height: 200vh;
+  margin: 0;
+  padding: 0;
 }
 .nav__bar {
   width: 100%;
@@ -40,7 +42,7 @@ img {
   width: 40%;
   margin: 20px auto;
   list-style-type: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .nav__links li {
   margin: auto;
