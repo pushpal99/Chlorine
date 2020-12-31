@@ -58,3 +58,66 @@
     font-size: 14px;
     margin: 7px 20px;
 }
+
+/* css of support */
+#support{
+    margin: 8% 2% 1% 2%;
+    width: 65%;
+    height: 100%;
+}
+
+.suporttitle{
+    margin-top: 9%;
+}
+
+#helpList{
+    display: flex;
+}
+.helpList{
+    margin-left: 20px;
+    height: 60px; 
+    width: 180px;
+    text-align: center;
+    cursor: pointer;  
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+.helpList:hover{
+     background-color: whitesmoke;
+     box-shadow: 2px 2px 20px rgb(212, 209, 209);
+     top: -3px;
+}
+.helpListtxt{
+    font-weight: 900;
+}
+
+#faqs{
+    display: flex;
+    margin-top: -3%;
+    margin-left: -1%;
+}
+.faqs{
+    margin-left: 3%;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#tpolicy{
+    display: flex;
+    margin-top: -3%;
+    margin-left: -1%;
+}
+.tpolicy{
+    margin-left: 3%;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#contactus{
+    width: 100%;
+    text-align: center;
+    
+}
