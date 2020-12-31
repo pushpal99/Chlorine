@@ -92,7 +92,7 @@ button {
   box-shadow: 0px -6px 18px 1px rgba(207, 214, 214, 1);
   top: 110%;
   right: -30%;
-  padding: 10px;
+  padding: 20px;
 }
 .dropdown__block {
   display: flex;
