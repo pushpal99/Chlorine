@@ -8,11 +8,10 @@ body {
   visibility: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 100vh;
-  z-index: 2;
+  height: 100%;
   position: absolute;
+  z-index: 2000;
   background-color: rgba(128, 128, 128, 0.555);
 }
 
@@ -20,15 +19,18 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: white;
   z-index: 5;
   opacity: 100%;
   min-width: 300px;
   min-height: 500px;
+
   width: 30%;
   height: auto;
   padding: 1%;
   border-radius: 10px;
+  box-shadow: 0 0 10px;
 }
 
 .login > * {
@@ -38,7 +40,11 @@ body {
 .login__cross {
   text-align: right;
 }
-
+.login > img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
 .login__cross > button {
   cursor: pointer;
   background: none;
@@ -97,13 +103,20 @@ body {
   border: none;
   outline: none;
 }
+
+.login__options > img {
+  width: 40px;
+  height: 40px;
+}
 .login__options > * {
   margin: 5px;
 }
 .login__options {
   display: flex;
   align-items: center;
+  /* padding: 0; */
   width: 90%;
+  text-align: left;
   background: white;
   height: 50px;
   border: none;
@@ -130,10 +143,7 @@ body {
   border: none;
   outline: none;
 }
-.signUp_inputs {
-  width: 100%;
-  border: none;
-}
+
 .login > h1 {
   font-size: 50px;
 }
@@ -145,4 +155,7 @@ body {
   border-radius: 40px;
   margin: 10px 60%;
   outline: none;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #f7433d, #fd306b);
 }

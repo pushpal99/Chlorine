@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
     <title>Cure Fit</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="/scripts/curefitOnlinePT.js"></script>
+    <script src="scripts/curefitOnlinePT.js"></script>
+    <script type="text/javascript" src="/scripts/login.js"></script>
+
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/fa/css/font-awesome.min.css" />
 </head>
 <body>
     <div class=nav__bar>
@@ -34,9 +38,9 @@
             <div class=login__section>
                 <i class="fa fa-circle" aria-hidden="true" style="color:cyan; font-size: 10px;"></i>
                 <button type="submit" style="cursor: pointer">Mumbai</button>
-                <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <span><img src="https://static.cure.fit/assets/images/user-image.svg"/></span>
                 <button id="login__btn" onclick=dropdown()>login</button>
-                <button type="submit" style="cursor: pointer"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20px;"></i></button>
+                <button type="submit" style="cursor: pointer"><img src="https://static.cure.fit/assets/images/cart-image.svg"/></button>
                 <div id="dropdown__content" class="dropdown__content">
                     <div class="dropdown__block">
                         <div>
@@ -278,7 +282,6 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
-          <p>Do you find this helpful?</p>
         </div>
         <hr />
         <button class="accordion">
@@ -323,7 +326,7 @@
             exchange it?
           </li>
         </button>
-        <hr />
+        
         <div class="panel">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -333,6 +336,7 @@
           </p>
         </div>
       </div>
+      <hr />
       <div class="tiny__faq">
         <div class="tiny__block">
           <h6>Which Are The Best Gyms Near Me?</h6>
@@ -488,6 +492,9 @@
         </div>
     </div>
 </body>
+<script src="/scripts/curefitOnlinePT.js"></script>
+<script src="/scripts/cult.js"></script>
+
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
@@ -504,5 +511,4 @@
     });
   }
 </script>
-<script src="scripts/cult.js"></script>
 </html>

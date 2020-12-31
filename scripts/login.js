@@ -61,7 +61,6 @@ function openLogin() {
         src="https://static.cure.fit/assets/images/google-new.svg"
         alt="google"
       />
-
       <h4 style="color: white">Sign in with Google</h4>
     </button>
     <button class="facebook login__options" style="margin: 10px auto">
@@ -101,18 +100,60 @@ function openLogin() {
     </div>
     <h1>Create an account</h1>    
     
-    <input class="signUp__inputs" type="text" placeholder="Name" /> <br><br>
-    <input class="signUp__inputs" type="text" placeholder="Email Id" /> <br><br>
-    <input class="signUp__inputs" type="password" placeholder="Password" />
+    <input class="signUp__inputs" id="username" type="text" placeholder="Name" /> <br><br>
+    <input class="signUp__inputs" id="gender" type="text" placeholder="Gender" /><br><br>
+    <input class="signUp__inputs" id="phone" type="phone" placeholder="Phone" /><br><br>
+    <input class="signUp__inputs" id="email" type="text" placeholder="Email Id" /> <br><br>
+  
+    <input class="signUp__inputs" id="dob" placeholder="Date of Birth" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" /> <br><br>
+
+    <input class="signUp__inputs" id="password" type="password" placeholder="Password" />
     
     
-    <p> <input type="checkbox"  class="checkbox" id="checkbox"> By Continuing you agree to the
+    <p> <input type="checkbox"  class="checkbox" id="checkbox" required> By Continuing you agree to the
       <em style="color: red">Terms of Services</em> and
       <em style="color: red">Privacy policy</em>.</p>
 
-      <button class="signUp__button"> Create </button>
+      <button class="signUp__button" onclick="createUser()" > Create </button>
 
     `;
 
     div.innerHTML = content;
+  }
+
+  function createUser() {
+    var username= document.getElementById('username').value;
+    var email= document.getElementById('email').value;
+    var password= document.getElementById('password').value;
+    var phone= document.getElementById('phone').value;
+    var gender= document.getElementById('gender').value;
+    var dob= document.getElementById('dob').value;
+
+
+    var user = {};
+    user.username = username;
+    user.email = email;
+    user.password = password;
+    user.phone= phone;
+    user.gender = gender;
+    user.dob=dob;
+
+
+    var data = JSON.parse(localStorage.getItem("data"));
+    console.log(typeof(data),data);
+
+
+    if(data == null){
+    data=[user];
+    }
+    else{
+      data.push(user);
+    }
+    console.log(data)
+    localStorage.setItem("data",  JSON.stringify(data));
+    localStorage.setItem("user",  JSON.stringify(user));
+
+    window.location.href='/pages/loggedIn.html'
+
+
   }
