@@ -20,7 +20,7 @@ body {
 .container__right {
   width: 80%;
   padding: 3%;
-  height: 100vh;
+  height: auto;
   background: #fafbfc;
 }
 .hero {
@@ -28,7 +28,6 @@ body {
 }
 .hero__image {
   width: 100%;
-
   border-radius: 100%;
 }
 .container__left__profile {
