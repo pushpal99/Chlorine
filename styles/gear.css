@@ -43,6 +43,10 @@ body {
   align-items: center;
   padding: 1%;
 }
+.card {
+  cursor: pointer;
+}
+
 
 .card > h4,
 .card > h5 {
