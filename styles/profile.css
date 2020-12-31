@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
+}
 html,
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -103,7 +106,6 @@ body {
 }
 .container__right__information input{
   font-size: 11px;
-  font-style: italic;
 }
 .information__row input {
   background: transparent;

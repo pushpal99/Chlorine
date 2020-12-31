@@ -1,6 +1,6 @@
-html,
-body {
-  font-family: "Roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+  font-family: 'Nunito', sans-serif;
 }
 .dropdown__content {
   display: none;
