@@ -325,6 +325,7 @@ justify-content: space-between;
   font-weight: 600;
   text-align: left;
   flex-basis: 60%;
+  color: #434343;
   margin: -4% 0 0 5%; 
   inline-size: 4px;
   word-spacing: 2px;
