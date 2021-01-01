@@ -67,6 +67,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.nav__links li img {
+  margin-left: 10px;
+}
 .link__section {
   /* border: 1px solid red; */
   width: 100%;
