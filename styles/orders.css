@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-body{
-  font-family: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
 }
 .container__left__icon > h4 > a {
   text-decoration: none;
@@ -18,7 +18,7 @@ body {
 }
 .container__left {
   max-width: 20%;
-  padding: 4% .5%;
+  padding: 4% 0.5%;
   margin-left: 1%;
   border: transparent;
   border-right: 1px solid #f3f3f3;
@@ -42,7 +42,6 @@ body {
   width: 100%;
   align-items: center;
   justify-content: start space-evenly;
-
 }
 .hero__information {
   display: flex;
@@ -126,7 +125,7 @@ body {
   text-decoration: none;
   display: block;
 }
-.lestsideImg{
+.lestsideImg {
   /* margin-right: 20px; */
 }
 .container__left__icon > img {
