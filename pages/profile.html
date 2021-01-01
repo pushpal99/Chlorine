@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg" type="image/icon type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/profile.css" />
     <link rel="stylesheet" href="/styles/gear_navbar.css" />
-
+<!-- <script src="/scripts/item.js"></script> -->
+<link rel="stylesheet" href="/styles/item.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Profile</title>
+<style>
+
+</style>
   </head>
   <body onload="fetchValues()">
     <div class=nav__bar>
@@ -35,7 +40,7 @@
             <button type="submit" style="cursor: pointer">Mumbai</button>
             <span><img src="https://static.cure.fit/assets/images/user-image.svg"/></span>
             <button id="login__btn" onclick=dropdown()><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-            <button type="submit" style="cursor: pointer"><img src="https://static.cure.fit/assets/images/cart-image.svg"/></button>
+            <button type="submit" style="cursor: pointer" onclick="window.location.href= '/pages/cart.html'"><img src="https://static.cure.fit/assets/images/cart-image.svg"/><div class="item" id="item">1</div></button>
             <div id="dropdown__content" class="dropdown__content">
                 <div class="dropdown__block">
                     <div>
@@ -206,8 +211,12 @@
       </div>
     </div>
     <script src="/scripts/cult.js"></script>
+    <script src="/scripts/item.js"></script>
     <script>
       function fetchValues(){
+        if(JSON.parse(localStorage.getItem("qty"))> 0){
+      document.getElementById("item").style.visibility= "visible";
+    }
         var user =JSON.parse(localStorage.getItem("user"));
         console.log(user)
         document.getElementById("name").value= user.username;
