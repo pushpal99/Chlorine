@@ -63,9 +63,9 @@
             </div>
             <div class="link__section">
                 <ul class=nav__links>
-                    <li><a tabindex="1">Cult Centers</a></li>
-                    <li><a tabindex="1">Online PT</a></li>
-                    <li><a tabindex="1">Cultsport</a></li>
+                    <li><a onclick="alert_me()" tabindex="1">Cult Centers</a></li>
+                    <li><a onclick="alert_me()" tabindex="1">Online PT</a></li>
+                    <li><a onclick="alert_me()" tabindex="1">Cultsport</a></li>
                 </ul>
             </div>
             <div class=login__section>
@@ -89,18 +89,22 @@
       
     </div>
     <div class= "voucher__section">
-        <h3>Two Free Trials</h3>
-        <p style="color: grey; font-size: 12px;">Experience cult classes for free</p>
-        <div class="voucher__container">
-          <div class="voucher">
-            <h1 style="color: white;">01</h1>
-            <button>Book Now</button>
-        </div>
+      <h3>Two Free Trials</h3>
+      <p style="color: grey; font-size: 12px;">Experience cult classes for free</p>
+      <div class="voucher__container">
         <div class="voucher">
-            <h1 style="color: white;">02</h1>
-            <button>Book Now</button>
-        </div>
+          <h1 style="color: white;">01</h1>
+          <button>Book Now</button>
+          <div class="circle__white"></div>
+          <div class="circle__white__right"></div>
       </div>
+      <div class="voucher">
+          <h1 style="color: white;">02</h1>
+          <button>Book Now</button>
+          <div class="circle__white"></div>
+          <div class="circle__white__right"></div>
+      </div>
+    </div>
     </div>
     <div class='membership'>
       <div class='opt'>
@@ -255,7 +259,7 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
-          <p>Do you find this helpful?</p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
         </div>
         <hr />
         <button class="accordion">
@@ -268,6 +272,7 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
         </div>
         <hr />
         <button class="accordion">
@@ -280,6 +285,7 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
         </div>
         <hr />
         <button class="accordion">
@@ -292,6 +298,7 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
         </div>
         <hr />
         <button class="accordion">
@@ -300,7 +307,6 @@
             exchange it?
           </li>
         </button>
-        <hr />
         <div class="panel">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -308,7 +314,35 @@
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.
           </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
         </div>
+        <hr>
+        <button class="accordion">
+          <li>How can I pay for my cultsport order?</li>
+        </button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
+        </div>
+        <hr />
+        <button class="accordion">
+          <li>How can I contact the delivery guy?</li>
+        </button>
+        <div class="panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>Do you find this helpful? &nbsp; &nbsp;<em style="color:#ff3278 ; font-style: normal;">Yes</em>&nbsp;&nbsp; <em style="color:#ff3278 ; font-style: normal;">No</em> </p>
+        </div>
+        <hr />
       </div>
       <div class="tiny__faq">
         <div class="tiny__block">
@@ -468,6 +502,9 @@
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
+  function alert_me() {
+    alert("Please login to check the pages!")
+  }
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
