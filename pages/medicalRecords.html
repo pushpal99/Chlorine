@@ -12,46 +12,38 @@
   </head>
   <body onload="fetchValues()">
     <div class=nav__bar>
-      <div class=logo__box>
-          <div class=logo__img__section>
-              <div class=logo>
-                  <img src="https://static.cure.fit/assets/images/curefit-v-man.svg"></img>
-              </div>
-              <!-- <div class=logo__name>
-                  <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/header-web/cultfit.svg"></img>
-              </div>
-              <button type="submit" style="cursor: pointer; background-color: white; border: none" ><i class="fa fa-chevron-down" aria-hidden="true"></i></button > -->
-          </div>
-          <div class="link__section">
-            <ul class=nav__links>
-              <li><a tabindex="1"><img src="https://static.cure.fit/assets/images/Livefit.svg"/><div>LIVE</div></a></li>
-              <li><a tabindex="1"  onclick="window.location.href='/pages/loggedIn.html'"><img  style="width: 30px;" src="https://static.cure.fit/assets/images/cult-icon.svg"/><div>CULT</div></a></li>
-              <li><a tabindex="1"><img style="width: 30px;" src="https://static.cure.fit/assets/images/mind-icon.svg"/><div>MIND</div></a></li>
-              <li><a tabindex="1" onclick="window.location.href='/pages/medicalRecords.html'"><img style="width: 30px;" src="https://static.cure.fit/assets/images/carefit-blk.svg"/><div>CARE</div></a></li>
-              <li ><a tabindex="1" onclick="window.location.href='/pages/gear.html'"><img style="width: 30px;" src="https://static.cure.fit/assets/images/store-icon.svg"/><div  >STORE</div></a></li>
-            </ul>
-        </div>
-          <div class=login__section>
-            <i class="fa fa-circle" aria-hidden="true" style="color:cyan; font-size: 10px;"></i>
-            <button type="submit" style="cursor: pointer">Mumbai</button>
-            <span><img src="https://static.cure.fit/assets/images/user-image.svg"/></span>
-            <button id="login__btn" onclick=dropdown()><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-            <button type="submit" style="cursor: pointer"><img src="https://static.cure.fit/assets/images/cart-image.svg"/></button>
-            <div id="dropdown__content" class="dropdown__content">
-                <div class="dropdown__block">
-                    <div>
-                        <img src="https://static.cure.fit/assets/images/profile-icon.svg"/>
-                    </div>
-                    <div>
-                        <a href="/pages/profile.html">Profile</a>
-                    </div>
+        <div class=logo__box>
+            <div class=logo__img__section>
+                <div class=logo>
+                    <img src="https://static.cure.fit/assets/images/curefit-v-man.svg"></img>
                 </div>
-                <div class="dropdown__block">
-                    <div>
-                        <img src="https://static.cure.fit/assets/images/cart-black.svg"/>
-                    </div>
-                    <div>
-                        <a href="/pages/orders.html">orders</a>
+                <!-- <div class=logo__name>
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/header-web/cultfit.svg"></img>
+                </div>
+                <button type="submit" style="cursor: pointer; background-color: white; border: none" ><i class="fa fa-chevron-down" aria-hidden="true"></i></button > -->
+            </div>
+            <div class="link__section">
+                <ul class=nav__links>
+                  <li><a tabindex="1"><img src="https://static.cure.fit/assets/images/Livefit.svg"/><div>LIVE</div></a></li>
+                  <li><a tabindex="1"  onclick="window.location.href='/pages/loggedIn.html'"><img  style="width: 30px;" src="https://static.cure.fit/assets/images/cult-icon.svg"/><div>CULT</div></a></li>
+                  <li><a tabindex="1"><img style="width: 30px;" src="https://static.cure.fit/assets/images/mind-icon.svg"/><div>MIND</div></a></li>
+                  <li><a tabindex="1" onclick="window.location.href='/pages/medicalRecords.html'"><img style="width: 30px;" src="https://static.cure.fit/assets/images/carefit-blk.svg"/><div>CARE</div></a></li>
+                  <li ><a tabindex="1" onclick="window.location.href='/pages/gear.html'"><img style="width: 30px;" src="https://static.cure.fit/assets/images/store-icon.svg"/><div  >STORE</div></a></li>
+                </ul>
+            </div>
+            <div class=login__section>
+                <!-- <button type="submit" style="cursor: pointer">Mumbai</button> -->
+                <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                <button id="login__btn" onclick=dropdown()><img src="https://static.cure.fit/assets/images/arrow-clp.svg"/></button>
+                <button type="submit" style="cursor: pointer"><img src="https://static.cure.fit/assets/images/cart-image.svg" /></button>
+                <div id="dropdown__content" class="dropdown__content">
+                    <div class="dropdown__block">
+                        <div>
+                            <img src="https://static.cure.fit/assets/images/profile-icon.svg"/>
+                        </div>
+                        <div>
+                            <a>Profile</a>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdown__block">
@@ -125,9 +117,9 @@
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi4wMDAyNiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE2NC45NjA5MzggMzAwLjAwMzkwNmguMDIzNDM3Yy4wMTk1MzEgMCAuMDM5MDYzLS4wMDM5MDYuMDU4NTk0LS4wMDM5MDZoMjcxLjk1NzAzMWM2LjY5NTMxMiAwIDEyLjU4MjAzMS00LjQ0MTQwNiAxNC40MjE4NzUtMTAuODc4OTA2bDYwLTIxMGMxLjI5Mjk2OS00LjUyNzM0NC4zODY3MTktOS4zOTQ1MzItMi40NDUzMTMtMTMuMTUyMzQ0LTIuODM1OTM3LTMuNzU3ODEyLTcuMjY5NTMxLTUuOTY4NzUtMTEuOTc2NTYyLTUuOTY4NzVoLTM2Ni42MzI4MTJsLTEwLjcyMjY1Ny00OC4yNTM5MDZjLTEuNTI3MzQzLTYuODYzMjgyLTcuNjEzMjgxLTExLjc0NjA5NC0xNC42NDQ1MzEtMTEuNzQ2MDk0aC05MGMtOC4yODUxNTYgMC0xNSA2LjcxNDg0NC0xNSAxNXM2LjcxNDg0NCAxNSAxNSAxNWg3Ny45Njg3NWMxLjg5ODQzOCA4LjU1MDc4MSA1MS4zMTI1IDIzMC45MTc5NjkgNTQuMTU2MjUgMjQzLjcxMDkzOC0xNS45NDE0MDYgNi45Mjk2ODctMjcuMTI1IDIyLjgyNDIxOC0yNy4xMjUgNDEuMjg5MDYyIDAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1aDI3MmM4LjI4NTE1NiAwIDE1LTYuNzE0ODQ0IDE1LTE1cy02LjcxNDg0NC0xNS0xNS0xNWgtMjcyYy04LjI2OTUzMSAwLTE1LTYuNzMwNDY5LTE1LTE1IDAtOC4yNTc4MTIgNi43MDcwMzEtMTQuOTc2NTYyIDE0Ljk2MDkzOC0xNC45OTYwOTR6bTMxMi4xNTIzNDMtMjEwLjAwMzkwNi01MS40Mjk2ODcgMTgwaC0yNDguNjUyMzQ0bC00MC0xODB6bTAgMCIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE1MCA0MDVjMCAyNC44MTI1IDIwLjE4NzUgNDUgNDUgNDVzNDUtMjAuMTg3NSA0NS00NS0yMC4xODc1LTQ1LTQ1LTQ1LTQ1IDIwLjE4NzUtNDUgNDV6bTQ1LTE1YzguMjY5NTMxIDAgMTUgNi43MzA0NjkgMTUgMTVzLTYuNzMwNDY5IDE1LTE1IDE1LTE1LTYuNzMwNDY5LTE1LTE1IDYuNzMwNDY5LTE1IDE1LTE1em0wIDAiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zNjIgNDA1YzAgMjQuODEyNSAyMC4xODc1IDQ1IDQ1IDQ1czQ1LTIwLjE4NzUgNDUtNDUtMjAuMTg3NS00NS00NS00NS00NSAyMC4xODc1LTQ1IDQ1em00NS0xNWM4LjI2OTUzMSAwIDE1IDYuNzMwNDY5IDE1IDE1cy02LjczMDQ2OSAxNS0xNSAxNS0xNS02LjczMDQ2OS0xNS0xNSA2LjczMDQ2OS0xNSAxNS0xNXptMCAwIiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+PC9nPjwvc3ZnPg=="
           />
         </div>
-        <div class="container__left__icon1 container__left__icon" style="border-right: #ff3278 4px solid;">
-          <button onclick="myFunction()" class="dropbtnmedical" id="dropbtnmedical" >
-            <a tabindex="1"><h4>Medical Records</h4></a>
+        <div class="container__left__icon1">
+          <button onclick="myFunction()" class="dropbtnmedical" id="dropbtnmedical" style="border-right: #ff3278 4px solid;">
+            <h4><a tabindex="1">Medical Records</a></h4>
             <img
               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTUxMS44MzYsMjYwLjA0M2wtNDEuMjcxLDAuMjI1bDIuNTc4LTIuNjIxYzUwLjg5Ni01MC45NDcsNTAuODgyLTEzMy44MDMtMC4wNDYtMTg0LjczICAgIGMtNTAuOTQyLTUwLjk0My0xMzMuODMzLTUwLjk0NC0xODQuNzc2LDBsLTMyLjM2MSwzMi4zNjNsLTMyLjM2Mi0zMi4zNjJjLTUwLjk0Mi01MC45NDMtMTMzLjgzMy01MC45NDMtMTg0Ljc3NiwwICAgIEMtMTIuMTIzLDEyMy44Ni0xMi4xMjIsMjA2Ljc1LDM4Ljc4OCwyNTcuNjZsOS40NzQsOS41MzJIMHYyOS45OTVoNzguMDY4bDE3OC45NzksMTgwLjEwM2wxODMuODQ3LTE4Ni44NjVMNTEyLDI5MC4wMzggICAgTDUxMS44MzYsMjYwLjA0M3ogTTI1Ni45NDEsNDM0LjYzTDEyMC4zNTYsMjk3LjE4OGg2NS4xNjNMMjEzLjcsMjI5LjQzbDQyLjg4MSwxMzUuMjI4bDYyLjIxOC05NS40OThsMTYuNDUzLDIxLjg0MWw2My4zMzctMC4zNDYgICAgTDI1Ni45NDEsNDM0LjYzeiBNNDI4LjI1OSwyNjAuNDk5bC03OC4xMTIsMC40MjdsLTMzLjEzMS00My45NzhsLTUwLjk5MSw3OC4yNjZMMjE3LjUsMTQyLjE4NWwtNTEuOTkzLDEyNS4wMDhoLTc0Ljk2ICAgIEw2MC4wMywyMzYuNDgzYy0xOS4wMTItMTkuMDEzLTI5LjQ4Mi00NC4yOTEtMjkuNDgyLTcxLjE3OGMwLTI2Ljg4OSwxMC40Ny01Mi4xNjcsMjkuNDgzLTcxLjE3OSAgICBjMTkuMDEzLTE5LjAxMiw0NC4yOTEtMjkuNDgyLDcxLjE3OC0yOS40ODJjMjYuODg4LDAsNTIuMTY2LDEwLjQ3LDcxLjE3OSwyOS40ODJsNTMuNTcxLDUzLjU3MWw1My41NzEtNTMuNTcxICAgIGMxOS4wMTMtMTkuMDEzLDQ0LjI5MS0yOS40ODIsNzEuMTc4LTI5LjQ4MmMyNi44ODksMCw1Mi4xNjcsMTAuNDcsNzEuMTc5LDI5LjQ4MmMxOS4wMTIsMTkuMDEyLDI5LjQ4Miw0NC4yOTEsMjkuNDgyLDcxLjE3OSAgICBzLTEwLjQ3LDUyLjE2Ni0yOS40ODIsNzEuMTc4TDQyOC4yNTksMjYwLjQ5OXoiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
             />
