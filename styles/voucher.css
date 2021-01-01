@@ -67,10 +67,15 @@ body{
 
 /* css of support */
 #support {
-  margin: 8% 2% 1% 2%;
+  margin: 0% 2% 0% 2%;
   width: 65%;
   height: 100%;
+  /* border: 1px solid red; */
 }
+
+/* #support > div {
+  margin-bottom: -1%;
+} */
 
 .suporttitle {
   margin-top: 9%;
@@ -78,11 +83,18 @@ body{
 
 #helpList {
   display: flex;
+  /* border: 1px solid red; */
+  /* justify-content: center;
+  align-items: center; */
 }
 .helpList {
   margin-left: 20px;
+  margin-bottom: -2%;
   height: 60px;
   width: 180px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -102,8 +114,9 @@ body{
 
 #faqs {
   display: flex;
-  margin-top: -3%;
-  margin-left: -1%;
+  /* margin-top: -3%; */
+  margin-left: -2%;
+  margin-bottom: -4%;
 }
 .faqs {
   margin-left: 3%;
@@ -114,8 +127,9 @@ body{
 
 #tpolicy {
   display: flex;
-  margin-top: -3%;
-  margin-left: -1%;
+  /* margin-top: -3%; */
+  margin-left: -2%;
+  margin-bottom: -4%;
 }
 .tpolicy {
   margin-left: 3%;
