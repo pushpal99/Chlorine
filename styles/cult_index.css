@@ -46,16 +46,28 @@ img {
 }
 .nav__links {
   display: flex;
+  height: 20px;
   width: 40%;
+  justify-content: center;
+  align-items: center;
   margin: 20px auto;
   list-style-type: none;
+
   /* border: 1px solid red; */
 }
 .nav__links li {
   margin: auto;
-  width: 250px;
-  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
 }
+.nav__links > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .link__section {
   /* border: 1px solid red; */
   width: 100%;
@@ -64,14 +76,23 @@ img {
   display: flex;
   position: fixed;
   right: 2vw;
-  top: 15px;
+  top: 10px;
   /* border: 1px solid red; */
   justify-content: center;
   align-items: center;
+  width: 200px;
   /* margin-left: 15%; */
+}
+
+.login__section button, .login__section span {
+  background-color: white;
+  border: none;
+  margin-left: 2%;
+  
 }
 .login__section button {
   background-color: white;
+  margin: 5% 0%;
   border: none;
 }
 .footer {
@@ -176,6 +197,10 @@ button {
   text-align: left;
   padding: 5px;
 }
+
+a{
+  cursor: pointer;
+}
 a:active {
   color: rgb(253, 131, 171);
 }
@@ -219,6 +244,7 @@ a[tabindex="1"]:focus {
 }
 .accordion {
   display: flex;
+  font-family: "FontAwesome";
   justify-content: space-between;
   background: transparent;
   border-bottom: 1px solid;
@@ -244,16 +270,16 @@ a[tabindex="1"]:focus {
   transition: max-height 0.2s ease-out;
 }
 .accordion:after {
-  content: "\2304";
-  font-size: 30px;
+  content: "\f078";
   color: #777;
   font-weight: bold;
   color: #ff3278;
   margin-left: 5px;
   transition: 1s;
 }
+
 .active:after {
-  content: "\2303";
+  content: "\f077";
   color: #ff3278;
   height: auto;
   transition: 1s;
@@ -272,7 +298,7 @@ hr {
 .voucher__section {
   width: 90%;
   margin: auto;
-  line-height: 3%;
+  line-height: 10px;
   /* border: 1px solid red; */
 }
 .voucher__container {
@@ -289,6 +315,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .voucher h1 {
   margin-top: 0%;
@@ -308,12 +335,30 @@ hr {
   border: none;
   outline: none;
 }
+.circle__white{
+  position: absolute;
+  top:30px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+}
+.circle__white__right{
+  position: absolute;
+  top:30px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+}
 /* 
 voucher ends */
 /* clock */
 .clock__container {
   background-color: rgb(236, 236, 236);
-  height: 40px;
+  height: 60px;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -331,7 +376,7 @@ voucher ends */
   /* border: 1px solid red; */
 }
 .clock h3 {
-  font-size: 11px;
+  font-size: 16px;
 }
 /*  clock ends */
 /* subscription section */
