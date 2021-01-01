@@ -520,11 +520,17 @@
 </script>
 <script src="scripts/cult.js"></script>
 <script>
+  
+  localStorage.setItem("qty", JSON.stringify(0))
+    localStorage.setItem("size", JSON.stringify(""))
 
-  localStorage.removeItem("qty");
-  localStorage.removeItem("userCart");
-  localStorage.removeItem("size");
+    var userCart= JSON.parse(localStorage.getItem("userCart"));
+    userCart.qty = 0;
+userCart.total_payable= 0;    
+userCart.total_price= "&#8377;0"
+userCart.discount= "&#8377;0"    
 
+localStorage.setItem("userCart", JSON.stringify(userCart))
 
 </script>
 </html>
