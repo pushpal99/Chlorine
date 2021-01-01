@@ -21,5 +21,7 @@ function gotoCart(){
     alert("Select a size")
     return
   }
+  localStorage.setItem("qty",JSON.stringify(1))
+
 window.location.href ='/pages/cart.html'
 }
