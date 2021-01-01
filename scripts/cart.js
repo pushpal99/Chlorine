@@ -40,7 +40,7 @@ function changeItemValue(e){
        document.getElementById("qty").textContent = qty
       
     if(qty==0){
-        window.location.href="/pages/gearInfo.html";
+        closeCart()
     }
     }
     else{
@@ -70,5 +70,15 @@ function changeItemValue(e){
 function closeCart(){
 
     localStorage.setItem("qty", JSON.stringify(0))
+    localStorage.setItem("size", JSON.stringify(""))
+
+    var userCart= JSON.parse(localStorage.getItem("userCart"));
+    userCart.qty = 0;
+userCart.total_payable= 0;    
+userCart.total_price= "&#8377;0"
+userCart.discount= "&#8377;0"    
+
+localStorage.setItem("userCart", JSON.stringify(userCart))
+
     window.location.href='/pages/gearInfo.html';
 }
