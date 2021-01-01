@@ -82,15 +82,15 @@
           <p>Choose Size &nbsp <a href="#" style="text-decoration: none ; color:#ff3278;">(Size Guide)</a> </p>
        
           <div class="store__right__btns">
-            <button class="store__right__btns__sizeButton" disabled>S</button>
-            <button class="store__right__btns__sizeButton">M</button>
-            <button class="store__right__btns__sizeButton">L</button>
-            <button class="store__right__btns__sizeButton">XL</button>
-            <button class="store__right__btns__sizeButton">XXL</button>
+            <button class="store__right__btns__sizeButton" disabled style="cursor: no-drop; border: none;">S</button>
+            <button class="store__right__btns__sizeButton" onclick="setSize(this)">M</button>
+            <button class="store__right__btns__sizeButton" onclick="setSize(this)">L</button>
+            <button class="store__right__btns__sizeButton" onclick="setSize(this)">XL</button>
+            <button class="store__right__btns__sizeButton" onclick="setSize(this)">XXL</button>
           </div>
           <div class="store__right__buy">
-            <button class="store__right__buy__btns">Add to Cart</button>
-            <button class="store__right__buy__btns"> Buy Now</button>
+            <button id="addtocart" class="store__right__buy__btns" onclick="changeContent()">Add to Cart</button>
+            <button class="store__right__buy__btns" onclick="gotoCart()"> Buy Now</button>
           </div>
 
           <div class="store__right__productDetails">
@@ -186,5 +186,6 @@
           </div>
       </div>
   </div>
+  <script src="/scripts/gearInfo.js"></script>
   </body>
 </html>
