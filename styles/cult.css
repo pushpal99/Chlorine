@@ -305,7 +305,7 @@ hr {
 .voucher__section {
   width: 90%;
   margin: auto;
-  line-height: 3%;
+  line-height: 5px;
   /* border: 1px solid red; */
 }
 .voucher__container {
@@ -346,7 +346,7 @@ voucher ends */
 /* clock */
 .clock__container {
   background-color: rgb(236, 236, 236);
-  height: 40px;
+  height: 60px;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -364,7 +364,7 @@ voucher ends */
   /* border: 1px solid red; */
 }
 .clock h3 {
-  font-size: 11px;
+  font-size: 16px;
 }
 /*  clock ends */
 /* subscription section */
