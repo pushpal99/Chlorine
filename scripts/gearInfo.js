@@ -13,6 +13,7 @@ function setSize(e){
     var btn = document.getElementById("addtocart")
     btn.textContent = "Go to Cart";
     btn.addEventListener("click", gotoCart)
+    localStorage.setItem("qty",JSON.stringify(1))
 
   }
 function gotoCart(){
