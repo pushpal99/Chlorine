@@ -38,25 +38,34 @@ body {
   /* margin-left: 20px; */
 }
 
-img {
+.nav__bar img {
   height: 100%;
   width: 100%;
 }
-/* .logo__box__center {
-  display: flex;
-  width: 50%;
-} */
 .nav__links {
   display: flex;
   width: 40%;
-  margin: 20px auto;
+  height: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   list-style-type: none;
+
   /* border: 1px solid red; */
 }
 .nav__links li {
   margin: auto;
-  font-size: 10px;
-  margin-top: -2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+.nav__links > li > a {
+  text-decoration: none;
+  color: inherit;
 }
 .link__section {
   /* border: 1px solid red; */
@@ -71,12 +80,15 @@ img {
   /* border: 1px solid red; */
   justify-content: center;
   align-items: center;
+  width: 200px;
   /* margin-left: 15%; */
 }
 
-.login__section button {
+.login__section button, .login__section span {
   background-color: white;
   border: none;
+  margin-left: 2%;
+  
 }
 
 button {
@@ -204,3 +216,17 @@ button {
   padding: 2%;
   margin: auto;
 }
+
+a:active,
+a:hover {
+  cursor: pointer;
+  color: rgb(253, 131, 171);
+  text-decoration: none;
+}
+a[tabindex="1"]:focus {
+  color: rgb(253, 131, 171);
+}
+a {
+  outline: none;
+}
+

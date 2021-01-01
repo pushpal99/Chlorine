@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
-}.container__left__icon > h4 > a {
+} */
+.container__left__icon > h4 > a {
   text-decoration: none;
   color: inherit;
 }
