@@ -39,7 +39,7 @@ In order to use the project you need to follow the below steps.
     <img src="Screenshots/loggedIn.PNG">
 
 6.  This is our onlinePT.
-    <img src="Screenshots/onlinePt.PNG">
+    <img src="Screenshots/onlinePT.PNG">
 
 7.  This is our cultSport section where you have different gears to buy.
     <img src="Screenshots/cultSport.PNG">
@@ -51,7 +51,7 @@ In order to use the project you need to follow the below steps.
     <img src="Screenshots/cart.PNG">
 
 10. This is how other pages will look like (with a notification on the cart icon which tells about the number of items in cart).
-    <img src="Screenshots/gearinfoIcon.PNG">
+    <img src="Screenshots/gearInfoIcon.PNG">
 
 <br>
 
