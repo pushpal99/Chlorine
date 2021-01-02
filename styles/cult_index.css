@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-body{
-  font-family: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
 }
 .container__left__icon > h4 > a {
   text-decoration: none;
@@ -84,11 +84,11 @@ img {
   /* margin-left: 15%; */
 }
 
-.login__section button, .login__section span {
+.login__section button,
+.login__section span {
   background-color: white;
   border: none;
   margin-left: 2%;
-  
 }
 .login__section button {
   background-color: white;
@@ -198,7 +198,7 @@ button {
   padding: 5px;
 }
 
-a{
+a {
   cursor: pointer;
 }
 a:active {
@@ -307,6 +307,7 @@ hr {
   width: 500px;
 }
 .voucher {
+  z-index: -1;
   background-color: rgb(65, 65, 82);
   margin: 2%;
   width: 250px;
@@ -335,18 +336,18 @@ hr {
   border: none;
   outline: none;
 }
-.circle__white{
+.circle__white {
   position: absolute;
-  top:30px;
+  top: 30px;
   left: -20px;
   width: 40px;
   height: 40px;
   border-radius: 40px;
   background-color: white;
 }
-.circle__white__right{
+.circle__white__right {
   position: absolute;
-  top:30px;
+  top: 30px;
   right: -20px;
   width: 40px;
   height: 40px;
